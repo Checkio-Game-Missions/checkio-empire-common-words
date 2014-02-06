@@ -11,7 +11,19 @@
     <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
 </p>
 
-<p><i>( Explain input and output values )</i></p>
+<p>
+    <strong>Hints: </strong> You can easily solve this task with several useful functions:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> and
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> and
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% endif %}
+</p>
+
 <p>
     <strong>Input: </strong> Two arguments. Both are int
 </p>
