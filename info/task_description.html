@@ -3,49 +3,54 @@
 </p>
 
 <p>
-    Sum two passed ints
+    Let's continue to examine words. You are given two string with words separated by comma.
+    Try to find what is common for these strings.
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
+<p>
+    Your function should find all words that appears in the both strings.
+    The result must be represented as the string of words separated by comma in <strong>the alphabetic order.</strong>
 </p>
 
 <p>
     <strong>Hints: </strong> You can easily solve this task with several useful functions:
     {% if "python 2" in interpreter|lower %}
     <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> and
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.join">str.join</a> and
+    <a href="http://docs.python.org/2/library/functions.html#sorted">sorted</a>.
+    Also try to use the built-in type --
+    <a href="http://docs.python.org/2/library/stdtypes.html#set">set</a>.
     {% else %}
     <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> and
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.join">str.join</a> and
+    <a href="http://docs.python.org/3/library/functions.html#sorted">sorted</a>.
+    Also try to use the built-in type --
+    <a href="http://docs.python.org/3/library/stdtypes.html#set">set</a>.
     {% endif %}
 </p>
 
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> Two arguments. Strings.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> The common words as a string.
 </p>
-
 
 
 <div class="for_info_only">
     <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio("hello,world", "hello,earth") == "hello"
+checkio("one,two,three", "four,five,six") == ""
+checkio("one,two,three", "four,five,one,two,six,three") == "one,three,two"
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
 </p>
