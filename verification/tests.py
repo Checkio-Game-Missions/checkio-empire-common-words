@@ -7,30 +7,72 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ["hello,world", "hello,earth"],
+            "answer": "hello",
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": ["one,two,three", "four,five,six"],
+            "answer": "",
+        },
+        {
+            "input": ["one,two,three", "four,five,one,two,six,three"],
+            "answer": "one,three,two",
+        },
+
+
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [
+                "soccer,final,guitar,club,hammer",
+                "foraging,mediocre,frog,send,cleaning,guardian,thudding,soccer,water"],
+            "answer": "soccer"
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": [
+                "final,fun,xylophone,teacher,zebra,sausage,pencil,chair",
+                "banana,mediocre,softly,final,teacher,violently,moon"],
+            "answer": "final,teacher"
+        },
+        {
+            "input": [
+                "uncle,musical,website,pencil,zebra,ink,hammer,teacher",
+                "hammer,literature,penguin,two,musical,computer,school,fun,network,pencil"],
+            "answer": "hammer,musical,pencil"
+        },
+        {
+            "input": [
+                "mega,cloud,two,website,final",
+                "window,penguin,literature,network,fun,cloud,final,sausage"],
+            "answer": "cloud,final"
+        },
+        {
+            "input": [
+                "final,pencil,school,dog,two,banana,moon,zebra,literature,ink",
+                "banana,sausage,window,uncle,ink,mediocre,cords,moon,network,fun"],
+            "answer": "banana,ink,moon"
+        },
+        {
+            "input": [
+                "penguin,home,zebra,computer",
+                "penguin,home,zebra,computer"],
+            "answer": "computer,home,penguin,zebra"
+        },
+        {
+            "input": [
+                "blubber,hammer",
+                "hammer"],
+            "answer": "hammer"
+        },
+        {
+            "input": [
+                "website,violently,cords,walking,xylophone,final",
+                "blubber,sausage,computer,softly,penguin,moon"],
+            "answer": ""
+        },
+
     ]
 }
