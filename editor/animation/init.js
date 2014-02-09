@@ -90,21 +90,43 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
         });
 
-        //This is for Tryit (but not necessary)
-//        var $tryit;
-//        ext.set_console_process_ret(function (this_e, ret) {
-//            $tryit.find(".checkio-result").html("Result<br>" + ret);
-//        });
-//
-//        ext.set_generate_animation_panel(function (this_e) {
-//            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
-//            $tryit.find('.bn-check').click(function (e) {
-//                e.preventDefault();
-//                this_e.sendToConsoleCheckiO("something");
-//                e.stopPropagation();
-//                return false;
-//            });
-//        });
+        var $tryit;
+
+        ext.set_console_process_ret(function (this_e, ret) {
+            $tryit.find(".checkio-result").html("Your Result<br>" + ret);
+        });
+
+        ext.set_generate_animation_panel(function (this_e) {
+            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
+            $tryit.find('.bn-check').click(function (e) {
+                e.preventDefault();
+                this_e.sendToConsoleCheckiO($tryit.find(".text-input1").val(), $tryit.find(".text-input2").val());
+                e.stopPropagation();
+                return false;
+            });
+
+            var rWordsBase = ["hi", 'hello', 'one', "two", "three", "four", "five", "six", "seven", "eight", "nine",
+            "checkio", "task"];
+
+            $tryit.find('.bn-random').click(function (e) {
+                e.preventDefault();
+                function randWords() {
+                    var rWords = rWordsBase.slice();
+                    var numb = Math.floor(Math.random() * 6) + 1;
+                    var res = [];
+                    for (var i = 0; i < numb; i++) {
+                        var rw = rWords.splice([Math.floor(Math.random() * rWords.length)], 1)[0];
+                        res.push(rw);
+                    }
+                    return res;
+                }
+                $tryit.find(".text-input1").val(randWords().join(","));
+                $tryit.find(".text-input2").val(randWords().join(","));
+
+
+                return false;
+            });
+        });
 
         var colorOrange4 = "#F0801A";
         var colorOrange3 = "#FA8F00";
