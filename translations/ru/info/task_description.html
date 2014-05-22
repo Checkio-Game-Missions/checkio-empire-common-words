@@ -1,0 +1,77 @@
+<img class="for_info_only" title="mirror" src="{{MEDIA}}mirror.png" alt="mirror"
+     style="width: 300px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    Продолжим изучение слов.
+    Даны две строки со словами разделенными запятыми.
+    Попробуйте найти что общего между этими строками.
+    Слова внутри каждой строки не повторяются.
+</p>
+
+<p>
+    Ваша функция должна находить все слова, которые появляются в обеих строках.
+    Результат должен быть представлен как строка со словами разделеными запятыми отсортироваными в <strong>алфавитном
+    порядке.</strong>
+</p>
+
+<p>
+    <strong>Замечания: </strong> Вы легко решите данную задачу при помощи нескольких функций:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.join">str.join</a> и
+    <a href="http://docs.python.org/2/library/functions.html#sorted">sorted</a>.
+    Также взгляните на тип данных --
+    <a href="http://docs.python.org/2/library/stdtypes.html#set">set</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.join">str.join</a> и
+    <a href="http://docs.python.org/3/library/functions.html#sorted">sorted</a>.
+    Также взгляните на тип данных --
+    <a href="http://docs.python.org/3/library/stdtypes.html#set">set</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Вх. данные: </strong> Два аргумента как строки (str).
+</p>
+
+<p>
+    <strong>Вых. данные: </strong> Общие слова как строка (str).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">
+checkio("hello,world", "hello,earth") == "hello"
+checkio("one,two,three", "four,five,six") == ""
+checkio("one,two,three", "four,five,one,two,six,three") == "one,three,two"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    В этой задаче вы попрактикуетесь в работе с наборами и строками.
+    И эти навыки будут полезными для лингвистического анализа.
+</p>
+
+
+<p>
+    <strong>Предусловия: </strong><br>
+    Каждая строка содержит не более 10 слов.<br>
+    Все слова разделены запятыми.<br>
+    Все слова состоят только из латинских букв в нижнем регистре.
+
+
+</p>
+<div class="facts for_info_only">
+    <p>
+        В мире CheckiO, вы можете исследовать ноые острова решая задачи и полученые за решения очки использовать для
+        открытия новых островов.
+        Вы найдете более 100 задач которые вам предстоит решить!
+
+    </p>
+</div>
