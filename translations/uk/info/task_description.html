@@ -1,0 +1,76 @@
+<img class="for_info_only" title="mirror" src="{{MEDIA}}mirror.png" alt="mirror"
+     style="width: 300px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    Продовжимо вивчення слів. 
+    Задані дві рядки зі словами, розділеними комами. 
+    Спробуйте знайти, що є спільного між цими рядками. 
+    Слова всередині кожного рядка не повторюються.
+</p>
+
+<p>
+    Ваша функція повинна знаходити всі слова, які з'являються в обох рядках. 
+    Результат повинен бути представлений, як рядок зі словами розділеними комами 
+    і відсортованими в <strong>алфавітному порядку.</strong>
+</p>
+
+<p>
+    <strong>Зауваження: </strong> Ви легко розв’яжете дану задачу за допомогою декількох функцій:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.join">str.join</a> и
+    <a href="http://docs.python.org/2/library/functions.html#sorted">sorted</a>.
+    Також погляньте на тип даних 
+    <a href="http://docs.python.org/2/library/stdtypes.html#set">set</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.join">str.join</a> и
+    <a href="http://docs.python.org/3/library/functions.html#sorted">sorted</a>.
+    Також погляньте на тип даних 
+    <a href="http://docs.python.org/3/library/stdtypes.html#set">set</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Вхідні дані: </strong> Два аргументи як рядки (str).
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> Загальні слова як рядок (str).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+    <pre class="brush: python">
+checkio("hello,world", "hello,earth") == "hello"
+checkio("one,two,three", "four,five,six") == ""
+checkio("one,two,three", "four,five,one,two,six,three") == "one,three,two"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    У цьому завданні ви попрактикуєтесь в роботі з наборами і рядками. 
+    Ці навички також будуть корисними для лінгвістичного аналізу.
+</p>
+
+
+<p>
+    <strong>Передумови: </strong><br>
+    Кожен рядок містить не більше 10 слів.<br>
+    Всі слова розділені комами.<br>
+    Всі слова складаються тільки з латинських букв в нижньому регістрі.
+
+
+</p>
+<div class="facts for_info_only">
+    <p>
+        У світі CheckiO, ви можете досліджувати нові острова, розв’язувати завдання, 
+        а отримані за розв’язки бали використовувати для відкриття нових островів. 
+        Ви знайдете більше, ніж 100 завдань, які вам треба буде ще розв’язати!
+    </p>
+</div>
