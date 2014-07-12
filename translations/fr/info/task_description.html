@@ -1,0 +1,74 @@
+<img class="for_info_only" title="mirror" src="{{MEDIA}}mirror.png" alt="mirror"
+        style="width: 300px;float: left; margin-top: 10px; "/>
+
+
+
+<p>
+    Continuons &agrave; examiner les mots. On vous donne deux chaines de carat&egrave;res avec des mots s&eacute;par&eacute;s par des virgules.
+    Essayez de trouver ce qui est commun entre ces chaines de caract&egrave;res. Les mots ne sont pas r&eacute;p&eacute;t&eacute;s au sein d'une m&ecirc;me chaine de caract&egrave;res.
+
+</p>
+
+<p>
+    Votre fonction doit trouver tous les mots qui apparaissent dans les deux chaines de caract&egrave;res.
+    Le r&eacute;sultat doit &ecirc;tre repr&eacute;sent&eacute; comme une chaine de mots s&eacute;par&eacute;s par des virgules dans <strong>l'ordre alphab&eacute;tique.</strong>
+</p>
+
+<p>
+    <strong>Conseils : </strong> Vous pouvez facilement r&eacute;soudre cette t&acirc;che avec plusieurs fonctions utiles :
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.join">str.join</a> et
+    <a href="http://docs.python.org/2/library/functions.html#sorted">sorted</a>.
+    Essayez aussi d'utiliser le type primitif --
+    <a href="http://docs.python.org/2/library/stdtypes.html#set">set</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.join">str.join</a> et
+    <a href="http://docs.python.org/3/library/functions.html#sorted">sorted</a>.
+    Essayez aussi d'utiliser le type primitif --
+    <a href="http://docs.python.org/3/library/stdtypes.html#set">set</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong> Deux arguments en tant que chaines de caract&egrave;res.
+</p>
+
+<p>
+    <strong>Sortie : </strong> Les mots communs en tant que chaine de caract&egrave;res.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+checkio("hello,world", "hello,earth") == "hello"
+checkio("one,two,three", "four,five,six") == ""
+checkio("one,two,three", "four,five,one,two,six,three") == "one,three,two"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Ici vous pouvez apprendre &agrave; utiliser les chaines de caract&egrave;res et les sets.
+    Ces connaissances peuvent &ecirc;tre utiles en analyse linguistique.
+</p>
+
+
+<p>
+    <strong>Pr&eacute;condition : </strong><br>
+    Chaque chaine de caract&egrave;res ne contient pas plus de 10 mots.<br>
+    Tous les mots sont s&eacute;par&eacute;s par des virgules.<br>
+    Tous les mots sont compos&eacute;s de lettres romaines en minuscule.
+
+
+        </p>
+<div class="facts for_info_only">
+    <p>
+    Dans le monde de CheckiO,
+    vous pouvez explorer de nouvelles &icirc;les en r&eacute;solvant des missions et en gagnant des points en recherchant des probl&egrave;mes sur les &icirc;les que vous avez d&eacute;j&agrave; ouvertes.
+    Nous avons plus de 100 missions amusantes &agrave; d&eacute;couvrir ici sur Checkio !</p>
+</div>
