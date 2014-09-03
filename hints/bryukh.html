@@ -1,0 +1,55 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        At first we should get words. We already know about <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>.
+<pre class="brush: python">
+"asd,dfg,asd".split(",") == ["asd", "dfg", "asd"]
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        For this mission we can use the built-in tools and useful data type
+        <a href="http://docs.python.org/2/library/stdtypes.html#set">sets</a>.
+<pre class="brush: python">
+a = set([1, 2, 3])
+b = set([1, 2])
+
+a.intersection(b) == {1, 2}
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Don't forget to sort the result data.
+<pre class="brush: python">
+result = ["one", "two", "three"]
+sorted(result) == ["one", "three", "two"]
+result = sorted(result) # or just result.sort()
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        <a href="http://docs.python.org/2/library/stdtypes.html#str.join">str.join</a>
+        is important here.
+<pre class="brush: python">
+",".join(["a", "b", "c"]) == "a,b,c"
+    </pre>
+    </div>
+</div>
+
+
+</body>
