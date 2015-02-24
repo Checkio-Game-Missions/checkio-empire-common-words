@@ -1,4 +1,3 @@
 **How it is used:**
 
-Here you can learn how to work with strings and sets.
-This knowledge can be useful for linguistic analysis.
+This mission simply teaches you how to work with strings and sets, knowledge which can be useful in linguistic analysis.
