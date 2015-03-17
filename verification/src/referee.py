@@ -1,4 +1,4 @@
-from checkio_referee import RefereeBase
+from checkio_referee import RefereeBase, representations
 
 import settings
 import settings_env
@@ -18,4 +18,9 @@ class Referee(RefereeBase):
         "python_2": cover,
         "python_3": cover,
         "javascript": None
+    }
+    CALLED_REPRESENTATIONS = {
+        "python_2": representations.unwrap_arg_representation,
+        "python_3": representations.unwrap_arg_representation,
+        "javascript": representations.unwrap_arg_representation,
     }
