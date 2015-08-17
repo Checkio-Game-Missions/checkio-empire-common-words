@@ -9,7 +9,7 @@ var assert = require("assert");
 
 if (!global.is_checking) {
     // These "asserts" using only for self-checking and not necessary for auto-testing
-    assert.equal(commonWords("hello,world", "hello,earth") == "hello", "Hello");
+    assert.equal(commonWords("hello,world", "hello,earth"), "hello", "Hello");
     assert.equal(commonWords("one,two,three", "four,five,six"), "", "Too different");
     assert.equal(commonWords("one,two,three", "four,five,one,two,six,three"), "one,three,two", "1 2 3");
 }
